@@ -27,19 +27,73 @@
 // }
 // content();
 
-const head = <div>
- <h1>Hello</h1>
- <div>
-  <ul>
-   <li>one</li>
-   <li>two</li>
-   <li>three</li>
-  </ul>
- </div>
-     <h2>Welcome to my website!</h2>
-   <p>I'm learning React.</p>
-</div>;
+// const head = <div>
+//  <h1>Hello</h1>
+//  <div>
+//   <ul>
+//    <li>one</li>
+//    <li>two</li>
+//    <li>three</li>
+//   </ul>
+//  </div>
+//      <h2>Welcome to my website!</h2>
+//    <p>I'm learning React.</p>
+// </div>
 
 
-    ReactDOM.render(
-     head, document.getElementById("root"))
+//     ReactDOM.render(
+//      head, document.getElementById("root"))
+
+// const nav = (
+//  <nav>
+//   <h1>React App</h1>
+//   <ul>
+//    <li>Pricing</li>
+//    <li>About</li>
+//    <li>Contact</li>
+//   </ul>
+//  </nav>
+// )
+
+// ReactDOM.render(nav, document.getElementById("root"))
+
+// const page = (
+//  <div>
+//    <img src="./my-app/src/logo.svg" width="40px" />
+//    <h1>Fun facts about React</h1>
+//    <ul>
+//      <li>Was first released in 2013</li>
+//      <li>Was originally created by Jordan Walke</li>
+//      <li>Has well over 100k stars on Github</li>
+//      <li>Is maintained by Facebook</li>
+//      <li>Powers thousands of enterprise apps, including mobile apps</li>
+//    </ul>
+//  </div>
+// )
+
+// ReactDOM.render(page, document.getElementById("root"))
+
+function Page() {
+ return (
+  <div>
+    <header>
+     <nav>
+      <img src="./my-app/src/logo.svg" width="40px" />
+      <h1>Reasons why i like react</h1>
+     </nav>
+   </header>
+   <main>
+      <ol>
+       <li>Was first released in 2013</li>
+       <li>Was originally created by Jordan Walke</li>
+       <li>Has well over 100k stars on Github</li>
+    </ol>
+   </main>
+   <footer>
+     <small>&copy; 2024 Elijah development. All rights reserved.</small>
+   </footer>
+  </div>
+ )
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"))
