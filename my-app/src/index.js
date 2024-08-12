@@ -1,6 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import "./index.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+let firstName = "";
+let lastName = "";
+
+function Name() {
+  firstName = window.prompt("First Name: ")
+  lastName = window.prompt("Last Name: ")
+  return (
+    <h1>Hello {firstName} {lastName}!!!</h1>
+  )
+}
+
+ReactDOM.render(<Name />, document.getElementById("root"));
