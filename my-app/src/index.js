@@ -1,25 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import Contact from "./component/Contact";
 
-
-function App() {
-  const date = new Date()
-  const hours = date.getHours()
-  let timeOfDay
-
-  if (hours < 12) {
-    timeOfDay = "morning";
-  }
-  else if (hours >= 12 && hours <= 17) {
-   timeOfDay = "afternoon";
-  }
-  else {
-    timeOfDay = "night";
-  }
-  return (
-    <h1>Good {timeOfDay}!!</h1>
+function App() { 
+  return(
+    <div className="contacts">
+      <Contact
+        name="Mr.Favour"
+        number="0815-562-6318"
+        email="Enochakinniyi015@gmail.com"
+       />
+      <Contact
+         name="Mr.Wisdom"
+        number="0807-614-8538"
+        email="Elijahakinniyi014@gmail.com"
+       />
+      <Contact
+        name="Mrs.Elizabeth"
+        number="0805-225-3835"
+        email="Elizabethakinniyi2015@gmail.com"
+       />
+      <Contact
+        name="Mr.Dare"
+        number="0805-721-3372"
+        email="Dareakinniyi2014@gmail.com"
+       />
+    </div>
   )
 }
-
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"))
