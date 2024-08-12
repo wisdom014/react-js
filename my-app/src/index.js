@@ -1,16 +1,12 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import Main from "./component/Main"
-import Navbar from "./component/Navbar"
-import "../src/index.css"
+import React from "react";
+import ReactDOM from "react-dom";
+// import App from "./App";
+// import "./index.css";
 
-function App() {
+function Me() {
   return (
-    <div className="container">
-  <Navbar />
-  <Main />
-  </div>
+    <h1>Hello</h1>
   )
 }
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<Me />, document.getElementById("root"))

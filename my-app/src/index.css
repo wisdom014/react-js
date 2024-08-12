@@ -1,36 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap'); */
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-   background-color: #24262E;
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #19191F;
+   color: #FFFFFF;
 }
-
-.container {
-   font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #FDFDFF;
-}
-ul > li::marker {
- color: #5EE3F9;
- font-size: 20px;
-}
-.logo {
- width: 35px;
-}
-.nav-title {
- font-size: 18px;
- color: #5EE3F9;
- margin-right: auto;
-}
-nav {
- padding: 10px;
- display: flex;
- align-items: center;
- background-color: #1E1D25;
-}
-.main {
- margin: 10px;
- padding: 10px;
+.linkedin {
+   background-color: #5085DA;
 }
