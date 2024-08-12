@@ -5,7 +5,7 @@ import Info from "./component/Info";
 
 export default function App() {
  return (
-  <div>
+  <div className="container">
 <Info />
 <About />
 <Interests />

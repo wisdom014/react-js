@@ -1,9 +1,67 @@
 body {
-   margin: 0;
+   width: 40vw;
+   margin: 25px auto;
    padding: 0;
-   background-color: #19191F;
+   text-align: center;
+   background-color: #202026;
    color: #FFFFFF;
+   font-family: "Inter", sans-serif;
+   box-sizing: border-box;
 }
 .linkedin {
    background-color: #5085DA;
+   color: #FFFFFF;
+}
+.background {
+   width: 100%;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}
+.about, .interests {
+   text-align: left;
+   padding: 0 20px;
+}
+.container {
+   background-color: #19191F;
+   border-radius: 8px;
+}
+.name {
+   font-size: 24px;
+}
+.job {
+ font-size: 12px;
+ font-weight: 400;
+}
+.email-text {
+ font-size: 8px;
+ font-weight: 400;
+}
+.buttons {
+   display: flex;
+   /* text-align: center; */
+   justify-content: center;
+   gap: 15px;
+}
+button {
+   width: 100px;
+   border-radius: 5px;
+   border: 0;
+   padding: 7px;
+}
+p {
+   position: relative;
+   font-size: 0.7rem;
+   bottom: 15px;
+}
+.interests {
+   position: relative;
+   bottom: 14px;
+}
+.info > .email-text {
+position: relative;
+bottom: 20px;
+}
+.info > .job {
+position: relative;
+bottom: 15px;
 }
