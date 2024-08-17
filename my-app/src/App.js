@@ -1,16 +1,19 @@
 import React from "react";
-import Joke from "./component/Joke";
-import JokesData from "./component/jokesData";
+import Card from "./component/Card";
+import Data from "./component/Data";
 
 export default function App() {
-  const jokes = JokesData.map(joke => {
+  const card = Data.map(props => {
     return (
-      <Joke setup = {joke.setup} punchline = {joke.punchline} />
+      <Card 
+      key = {props.id}
+      {...props}
+       />
     )
   })
   return (
-    <div>
-    {jokes}
+    <div className="app">
+    {card}
   </div>
   )
 }

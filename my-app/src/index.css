@@ -2,4 +2,48 @@ body {
  margin: 0;
  padding: 0;
  font-family: "Inter", sans-serif;
+ overflow: scroll;
+}
+.card {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ margin: 10px;
+ border-radius: 10px;
+ /* border: 1px solid black; */
+ min-width: 11rem;
+ height: fit-content;
+  line-break: anywhere;
+   line-height: 14px;
+}
+img {
+ width: 100%;
+ height: auto;
+ border-radius: 10px;
+}
+.app {
+ display: flex;
+ flex-direction: row;
+}
+.card-stats {
+ font-size: 13px;
+ color: grey;
+}
+.card-title {
+ font-size: 13px;
+}
+.card-price {
+ line-height: 0;
+}
+.remains {
+ position: absolute;
+ display: flex;
+ font-size: 12px;
+ white-space: nowrap;
+ width: fit-content;
+ padding: 7px;
+ border-radius: 7px;
+ font-weight: bold;
+ margin: 5px;
+ background-color: white;
 }
