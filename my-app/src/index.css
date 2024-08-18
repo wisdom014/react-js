@@ -6,44 +6,81 @@ body {
 }
 .card {
  display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- margin: 10px;
+ flex-direction: row;
+ margin: 40px 35px;
  border-radius: 10px;
- /* border: 1px solid black; */
- min-width: 11rem;
+ width: fit-content;
  height: fit-content;
-  line-break: anywhere;
-   line-height: 14px;
 }
-img {
- width: 100%;
- height: auto;
- border-radius: 10px;
+.card-img {
+   border-radius: 10px;
+   width: 120px;
+   height: 100%;
+   object-fit: cover;
 }
-.app {
+.location-img {
+   width: 35px;
+   align-self: center;
+   align-items: flex-start;
+}
+.location-link {
+   align-self: center;
+   font-size: 0.7rem;
+   color: #B4B2B4;
+}
+.location-text {
+   text-transform: uppercase;
+   margin-right: 12px;
+   font-size: 0.7rem;
+   align-self: center;
+}
+.card-location {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   align-self: center;
+   height: fit-content;
+   line-height: 0;
+}
+.img-container {
+   display: flex;
+   flex-grow: 1;
+   align-self: center;
+}
+.nav-logo {
+ width: 1.7rem;
+ align-self: center;
+ border-radius: 50%;
+}
+.title {
+   color: white;
+   font-weight: 300;
+}
+.navbar {
  display: flex;
  flex-direction: row;
+ justify-content: center;
+ background-color: #E93E52;
+ gap: 10px;
 }
-.card-stats {
- font-size: 13px;
- color: grey;
+.text-title {
+   text-transform: capitalize;
+   line-height: 0;
+   margin: 10px 0 43px 0;
 }
-.card-title {
- font-size: 13px;
+.text-date {
+   line-height: 0;
+   margin: 10px 0;
+   font-weight: 800;
 }
-.card-price {
- line-height: 0;
+.text-desc {
+   margin: 0;
+   font-size: 0.8rem;
+   color: #868488;
 }
-.remains {
- position: absolute;
- display: flex;
- font-size: 12px;
- white-space: nowrap;
- width: fit-content;
- padding: 7px;
- border-radius: 7px;
- font-weight: bold;
- margin: 5px;
- background-color: white;
+.text-container {
+   padding: 0 15px;
+}
+.card-text {
+   align-self: center;
 }

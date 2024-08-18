@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./component/Card";
 import Data from "./component/Data";
+import Navbar from "./component/Navbar";
 
 export default function App() {
   const card = Data.map(props => {
@@ -11,9 +12,13 @@ export default function App() {
        />
     )
   })
+
   return (
     <div className="app">
-    {card}
+      <Navbar />
+      <section>
+        {card}
+      </section>
   </div>
   )
 }
