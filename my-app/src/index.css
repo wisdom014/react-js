@@ -2,85 +2,254 @@ body {
  margin: 0;
  padding: 0;
  font-family: "Inter", sans-serif;
- overflow: scroll;
+ box-sizing: border-box;
 }
-.card {
- display: flex;
- flex-direction: row;
- margin: 40px 35px;
- border-radius: 10px;
- width: fit-content;
- height: fit-content;
+.app {
+   height: 100dvh;
+
 }
-.card-img {
-   border-radius: 10px;
-   width: 120px;
-   height: 100%;
-   object-fit: cover;
-}
-.location-img {
-   width: 35px;
-   align-self: center;
-   align-items: flex-start;
-}
-.location-link {
-   align-self: center;
-   font-size: 0.7rem;
-   color: #B4B2B4;
-}
-.location-text {
-   text-transform: uppercase;
-   margin-right: 12px;
-   font-size: 0.7rem;
-   align-self: center;
-}
-.card-location {
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   align-self: center;
-   height: fit-content;
-   line-height: 0;
-}
-.img-container {
-   display: flex;
-   flex-grow: 1;
-   align-self: center;
-}
+/* NAVBAR */
 .nav-logo {
- width: 1.7rem;
+ width: 1.5rem;
  align-self: center;
+ margin: 0;
+ padding: 0;
  border-radius: 50%;
 }
 .title {
    color: white;
+   font-size: 15px; /* change */
    font-weight: 300;
+   align-self: center;
+}
+.three {
+   color: white;
+   font-size: 7.6px; /* change */
+   align-self: center;
 }
 .navbar {
  display: flex;
  flex-direction: row;
- justify-content: center;
- background-color: #E93E52;
+ justify-content: space-between;
+background: #5a1174;
+   background: linear-gradient(90deg, #5a1174 40%, #9308c5 80%);
+   background: -webkit-linear-gradient(90deg, #5a1174 40%, #9308c5 80%);
+   background: -moz-linear-gradient(90deg, #5a1174 40%, #9308c5 80%);
  gap: 10px;
+ padding: 0 8px; /* change */
 }
-.text-title {
-   text-transform: capitalize;
-   line-height: 0;
-   margin: 10px 0 43px 0;
+.logo-container {
+   display: flex;
+   flex-direction: row;
 }
-.text-date {
-   line-height: 0;
-   margin: 10px 0;
-   font-weight: 800;
+/* BODY */
+.meme {
+   width: 100dvw;
+   display: inline;
+   margin-top: 20px;
 }
-.text-desc {
-   margin: 0;
-   font-size: 0.8rem;
-   color: #868488;
+.container {
+   padding: 0 4.7dvw;
 }
-.text-container {
-   padding: 0 15px;
+
+.meme-img {
+   position: relative;
+   width: 100%; /* Maintain original width */
+   height: 100%; /* Full height */
+   object-fit: cover; /* Maintain aspect ratio and cover the container */
+   align-self: center; /* Center image to the top */
+   align-items: center;
 }
-.card-text {
+
+.top-text, .bottom-text {
+  position: absolute; /* Position text over the image */
+  color: white; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+  font-size: 30px; /* Adjust font size as needed */
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.top-text {
+  top: 0; /* Position from the top */
+  line-height: 0;
+}
+
+.bottom-text {
+  bottom: 0; /* Position from the bottom */
+  line-height: 0;
+}
+
+.input {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+   margin-top: 20px;
+}
+
+input[type="text"] {
+   width: 50%; /* change */
+   height: 25px;
+   padding-left: 10px;
+   border-radius: 5px;
+   border: 1px solid #787678;
+}
+
+input[type="submit"] {
+   width: 100%; /* change */
+   height: 35px; /* change */
+   margin-top: 15px;
+   border: 0;
+   background: #5a1174;
+      background: linear-gradient(90deg, #5a1174 40%, #9308c5 80%);
+      background: -webkit-linear-gradient(90deg, #5a1174 40%, #9308c5 80%);
+      background: -moz-linear-gradient(90deg, #5a1174 40%, #9308c5 80%);
+      color: white;
+   border-radius: 5px;
+   font-size: 10px; /* change */
+   cursor: pointer;
+}
+.memes {
+   margin-top: 36px;
+   border-radius: 4px;
    align-self: center;
+   align-items: center;
+   position: relative;
+   width: 100%;
+   height: 70dvh;
+   overflow: hidden;
+}
+
+@media screen and (min-width: 425px) {
+   .container {
+         margin: 0 7%;
+         /* change */
+      }
+}
+@media screen and (min-width: 768px) {
+   .container {
+         margin: 0 15%;
+         /* change */
+      }
+      .title {
+         font-size: 15px;
+         /* change */
+         margin-left: 7px;
+      }
+   
+      .three {
+         font-size: 9px;
+         /* change */
+      }
+   
+      .navbar {
+         padding: 0 20px;
+         /* change */
+      }
+      .meme-img {
+         width: 100%;
+         /* change */
+      }
+   
+      input[type="text"] {
+         width: 50%;
+         /* change */
+      }
+   
+      input[type="submit"] {
+         width: 100%;
+         /* change */
+         height: 35px;
+         /* change */
+         font-size: 13px;
+         /* change */
+      }
+}
+@media screen and (min-width: 1024px) {
+   .container {
+         margin: 0 13%;
+         /* change */
+      }
+      .nav-logo {
+         width: 1.7rem;
+      }
+      .title {
+         font-size: 20px;
+         /* change */
+         margin-left: 7px;
+      }
+   
+      .three {
+         font-size: 12px;
+         /* change */
+      }
+   
+      .navbar {
+         padding: 0 20px;
+         /* change */
+      }
+      .meme-img {
+         width: 100%;
+         /* change */
+      }
+   
+      input[type="text"] {
+         width: 50%;
+         /* change */
+         height: 40px;
+      }
+   
+      input[type="submit"] {
+         width: 100%;
+         /* change */
+         height: 50px;
+         /* change */
+         font-size: 16px;
+         /* change */
+      }
+}
+@media screen and (min-width: 1440px) {
+   .container {
+         margin: 0 18%;
+         /* change */
+      }
+      .nav-logo {
+         width: 2rem;
+      }
+      .title {
+         font-size: 22px;
+         /* change */
+         margin-left: 7px;
+      }
+   
+      .three {
+         font-size: 18px;
+         /* change */
+      }
+   
+      .navbar {
+         padding: 0 28px;
+         /* change */
+      }
+      .meme-img {
+         width: 100%;
+         /* change */
+      }
+   
+      input[type="text"] {
+         width: 50%;
+         /* change */
+         height: 50px;
+      }
+   
+      input[type="submit"] {
+         width: 100%;
+         /* change */
+         height: 58px;
+         /* change */
+         font-size: 20px;
+         /* change */
+      }
 }
